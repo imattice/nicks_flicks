@@ -9,19 +9,20 @@ nicksFlicks.config(function($stateProvider, $urlRouterProvider) {
             },
             'body': {
                 templateUrl:'partials/home.html'
-            },
+            }
         }
     });
 
     $stateProvider.state('reviews', {
-        url:'reivews',
+        url:'/reviews',
         views: {
             'header': {
                 templateUrl:'partials/header.html',
             },
             'body': {
                 templateUrl:'partials/reviews.html'
-            },
+            }
         }
     });
+
 });

@@ -1,6 +1,13 @@
-<ul>
-    <li>Sample reivews</li>
-</ul>
+<div ng-show='reviews.length'>
+    <ul>
+        <li ng-repeat = 'item in reviews'>
+            test
+            <!-- <a sref="reviews({ reviewId: review.id })">  -->
+                {{ item.title }}
+            <!-- </a> -->
+        </li>
+    </ul>
+</div>
 
 <h2>Review title</h2>
 <p>
