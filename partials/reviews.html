@@ -1,4 +1,4 @@
-<div ng-show='reviews.length'>
+<!-- <div ng-show='reviews.length'> -->
     <ul>
         <li ng-repeat = 'item in reviews'>
             test
@@ -7,9 +7,14 @@
             <!-- </a> -->
         </li>
     </ul>
-</div>
+<!-- </div> -->
 
-<h2>Review title</h2>
-<p>
-    review paragraph
-</p>
+<div ui-view = 'selected_review'></div>
+<!-- <div ui-view = 'new_review'></div> -->
+
+<h2>Create New Movie Review</h2>
+<form ng-submit='ReviewsFactory.addReview()' role='form'>
+    <input type="text" name="title" value="Enter the title for the review here">
+    <textarea rows='4' cols = '50' name="review"></textarea>
+    <button type="submit">Submit</button>
+</form>
