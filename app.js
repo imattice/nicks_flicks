@@ -6,6 +6,7 @@ nicksFlicks.config(function($stateProvider, $urlRouterProvider) {
         views: {
             'header': {
                 templateUrl:'partials/header.html',
+                controller:'HeaderCtrl'
             },
             'body': {
                 templateUrl:'partials/home.html'
@@ -18,35 +19,31 @@ nicksFlicks.config(function($stateProvider, $urlRouterProvider) {
         views: {
             'header': {
                 templateUrl:'partials/header.html',
+                controller:'HeaderCtrl'
             },
             'body': {
                 templateUrl:'partials/reviews.html',
                 controller:'ReviewsCtrl'
+            },
+            'selected_review': {
+                templateUrl:'partials/selected_review.html',
+                controller:'ReviewsCtrl'
             }
+
         }
     });
 
-    // $stateProvider.state('selected_review', {
-    //     url:'/:reviewId'
-    //     views: {
-    //         'header': {
-    //             templateUrl:'partials/header.html',
-    //         },
-    //         'body': {
-    //             templateUrl: 'partials/selected_review.html'
-    //         }
-    //     }
-    // });
-
-    // $stateProvider.state('new_review', {
-    //     url:'/new_review'
-    //     views: {
-    //         'header': {
-    //             templateUrl: 'partials/header.html'
-    //         },
-    //         'body': {
-    //             templateUrl: 'partials/new_review.html'
-    //         }
-    //     }
-    // })
+    $stateProvider.state('selected_review', {
+        url:'/:reviewId',
+        views: {
+            'header': {
+                templateUrl:'partials/header.html',
+                controller:'HeaderCtrl'
+            },
+            'body': {
+                templateUrl: 'partials/selected_review.html',
+                controller: 'ReviewsCtrl'
+            }
+        }
+    });
 });

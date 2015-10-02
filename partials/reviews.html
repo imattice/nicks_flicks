@@ -1,10 +1,9 @@
 <!-- <div ng-show='reviews.length'> -->
     <ul>
         <li ng-repeat = 'item in reviews'>
-            test
-            <!-- <a sref="reviews({ reviewId: review.id })">  -->
+            <a sref="selected_review({ reviewId: review.id })">
                 {{ item.title }}
-            <!-- </a> -->
+            </a>
         </li>
     </ul>
 <!-- </div> -->
@@ -14,7 +13,7 @@
 
 <h2>Create New Movie Review</h2>
 <form ng-submit='ReviewsFactory.addReview()' role='form'>
-    <input type="text" name="title" value="Enter the title for the review here">
-    <textarea rows='4' cols = '50' name="review"></textarea>
+    <input ng-model='ReviewsFactory.review_title' type="text" name="title" placeholder="Enter the title for the review here">
+    <textarea ng-model='ReviewsFactory.review_content' rows='4' cols = '50' name="review"></textarea>
     <button type="submit">Submit</button>
 </form>
