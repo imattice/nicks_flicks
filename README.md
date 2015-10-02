@@ -1,0 +1,34 @@
+
+# Nick's Flicks
+
+##### Epicodus Advanced AngularJS Review, 10/2/2015
+
+#### By Ike Mattice
+
+## Description
+
+A discussion board designed to post reviews and opinions on movies.  This program also has a night mode which inverts the color scheme for easy reading at night.
+
+## Setup
+
+1. Clone this repository from GitHub.
+2. Initialize the server by running $ python -m SimpleHTTPServer
+3. Navigate to localhost:8000 using your favorite browser
+
+
+## Technologies Used
+
+Javascript, AngularJS, Bootstrap
+
+### Legal
+
+
+Copyright (c) 2015 Ike Mattice
+
+This software is licensed under the MIT license.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
