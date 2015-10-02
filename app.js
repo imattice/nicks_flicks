@@ -15,35 +15,38 @@ nicksFlicks.config(function($stateProvider, $urlRouterProvider) {
     });
 
     $stateProvider.state('reviews', {
-        url:'/reviews',
+        url:'/reviews/:reviewId',
         views: {
             'header': {
                 templateUrl:'partials/header.html',
                 controller:'HeaderCtrl'
             },
-            'body': {
+            'reviews': {
                 templateUrl:'partials/reviews.html',
                 controller:'ReviewsCtrl'
             },
-            'selected_review': {
+            'new-review': {
+                templateUrl:'partials/new_review.html',
+                controller:'ReviewsCtrl'
+            },
+            'display-review': {
                 templateUrl:'partials/selected_review.html',
                 controller:'ReviewsCtrl'
             }
-
         }
     });
 
-    $stateProvider.state('selected_review', {
-        url:'/:reviewId',
-        views: {
-            'header': {
-                templateUrl:'partials/header.html',
-                controller:'HeaderCtrl'
-            },
-            'body': {
-                templateUrl: 'partials/selected_review.html',
-                controller: 'ReviewsCtrl'
-            }
-        }
-    });
+    // $stateProvider.state('display_review', {
+    //     url:'/reviews/:reviewId',
+    //     views: {
+    //         'header': {
+    //             templateUrl:'partials/header.html',
+    //             controller:'HeaderCtrl'
+    //         },
+    //         'display_review': {
+    //             templateUrl: 'partials/selected_review.html',
+    //             controller: 'ReviewsCtrl'
+    //         }
+    //     }
+    // });
 });
